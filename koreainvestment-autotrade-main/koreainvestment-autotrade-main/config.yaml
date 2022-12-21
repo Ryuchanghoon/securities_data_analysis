@@ -8,9 +8,10 @@ CANO: "63620535"
 ACNT_PRDT_CD: "01"
 
 #실전투자
-URL_BASE: "https://openapi.koreainvestment.com:9443"
+#URL_BASE: "https://openapi.koreainvestment.com:9443"
+
 #모의투자
-# URL_BASE: "https://openapivts.koreainvestment.com:29443"
+URL_BASE: "https://openapivts.koreainvestment.com:29443"
 
 #디스코드 웹훅 URL
 DISCORD_WEBHOOK_URL: "https://discordapp.com/api/webhooks/1054696805624987678/BM9LaUJA14EsWaSUX9rfOdD04CgzFOyoBl6dRXiSAJx_6-I4dRguCvz2M6ex-Ygq89ht"

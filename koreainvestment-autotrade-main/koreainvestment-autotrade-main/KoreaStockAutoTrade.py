@@ -4,6 +4,7 @@ import datetime
 import time
 import yaml
 
+
 with open('config.yaml', encoding='UTF-8') as f: ## 수정 필요
     _cfg = yaml.load(f, Loader=yaml.FullLoader)
 APP_KEY = _cfg['APP_KEY']
