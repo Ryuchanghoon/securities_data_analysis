@@ -3,10 +3,18 @@ import json
 import datetime
 import time
 import yaml
+from urllib.request import urlopen
 
-
-with open('config.yaml', encoding='UTF-8') as f: ## 수정 필요
+with open('C:\Users\rch\Desktop\대학관련\github\koreainvestment-autotrade-main\koreainvestment-autotrade-main', encoding = 'UTF-8') as f: # 수정 필요
     _cfg = yaml.load(f, Loader=yaml.FullLoader)
+
+#with open('test.json', encoding = 'euc-kr') as f:
+#    _cfg = json.load(f)
+
+#url = "https://github.com/youtube-jocoding/koreainvestment-autotrade/blob/main/config.yaml"
+#a = urlopen(url)
+#_cfg = a.read()
+
 APP_KEY = _cfg['APP_KEY']
 APP_SECRET = _cfg['APP_SECRET']
 ACCESS_TOKEN = ""
