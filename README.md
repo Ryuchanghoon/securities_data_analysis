@@ -12,3 +12,4 @@ KIS developers 서비스, APP_KEY, APP_SECRET(config.yaml) 값 설정하여, 본
 
 
 -12/20: 주식 투자 자동화 파이썬 코드 분석. yaml파일 오류 확인. 수정 예정
+<br>-12/21: 모의 투자로 변경(config.yaml)
