@@ -5,7 +5,7 @@ import time
 import yaml
 from urllib.request import urlopen
 
-with open('C:\Users\rch\Desktop\대학관련\github\koreainvestment-autotrade-main\koreainvestment-autotrade-main', encoding = 'UTF-8') as f: # 수정 필요
+with open('config.yaml', encoding = 'UTF-8') as f: # 수정 필요
     _cfg = yaml.load(f, Loader=yaml.FullLoader)
 
 #with open('test.json', encoding = 'euc-kr') as f:
