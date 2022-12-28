@@ -1,5 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
+import openpyxl
+
+
+
+fpath = r'C:\Users\rch\Desktop\대학관련\github\StockDataReal-TimeChart\StockData.xlsx'
+wb = openpyxl.load_workbook(fpath)
+ws = wb.active # 현재 활성화된 시트 선택
+
+
 
 
 # 종목 리스트
@@ -9,6 +18,8 @@ codes = [
     '373220'  # LG 에너지 솔루션
 ]
 
+
+row = 2 # row값 2부터 시작해서. row 1은 변수명
 
 for code in codes:
     url = f"https://finance.naver.com/item/sise.naver?code={code}"
@@ -20,3 +31,7 @@ for code in codes:
     price = price.replace(',', '')
 
     print(price)
+    
+    ws[f'B{row}'] = int(price) #위에 row값에 숫자. 확인
+    row = row + 1
+wb.save(fpath)
