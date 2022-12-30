@@ -9,6 +9,7 @@ wb = openpyxl.load_workbook(fpath)
 ws = wb.active # 현재 활성화된 시트 선택
 
 
+add_code = int(input("종목 추가: "))
 
 
 # 종목 리스트
@@ -18,6 +19,9 @@ codes = [
     '373220'  # LG 에너지 솔루션
 ]
 
+for i in range(add_code):
+    code = input("종목 코드 입력: ")
+    codes.append(code)
 
 row = 2 # row값 2부터 시작해서. row 1은 변수명
 
