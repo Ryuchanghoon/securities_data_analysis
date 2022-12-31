@@ -26,6 +26,10 @@
 import requests
 import json
 from pandas import DataFrame
+import openpyxl
+
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 url = "https://api.finance.naver.com/siseJson.naver?symbol=005930&requestType=1&startTime=20220407&endTime=20221231&timeframe=day"
 result = requests.post(url)
@@ -37,5 +41,15 @@ print(type(data))
 df = DataFrame(data[1:], columns = data[0])
 df = df.set_index('날짜')
 print(df.head())
+
+
+df.to_excel(r'C:\Users\rch\Desktop\대학관련\github\StockDataReal-TimeChart\StockData.xlsx', sheet_name='Stock_data')
+
+
+
+#sns.lineplot(data = df, x = '날짜', y = '시가')
+#sns.show()
+
+
 
 #print(type(result.text))
