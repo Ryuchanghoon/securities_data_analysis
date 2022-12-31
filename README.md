@@ -27,3 +27,4 @@ File: DataLoad.py, StockData.xlsx
 <h5>2단계</h5>
 <br> -12/28: 종목 현재가 불러와서 excel파일에 실시간 반영.
 <br> -12/30: 추가할 종목 불러와서, 현재가 excel파일에 추가.
+<br>- 12/31: 삼성전자 데이터(005930) 차트 DataFrame형태로 변경.
