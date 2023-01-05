@@ -5,7 +5,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import urllib, pymysql, calendar, time, json
 from threading import Timer
-
+from flask_sqlalchemy import SQLAlchemy
 
 class DBUpdater:
     def __init__(self):
@@ -85,7 +85,7 @@ class DBUpdater:
     def read_naver(self,code,company,pages_to_fetch):
         """네이버 금융에서 읽어온 주식 시세를 읽어서 데이터프레임으로 변환"""
         try:
-            url = f"https://finance.naver.com/item/size_day.nhn?code= {code}"
+            url = f"https://finance.naver.com/item/main.naver?code={code}"
             with urlopen(url) as doc:
                 if doc is None:
                     return None
@@ -140,11 +140,11 @@ class DBUpdater:
         except FileNotFoundError:
             with open('config.json', 'w') as out_file:
                 pages_to_fetch = 100
-                config = {'pages_to_fetch':1}
+                config = {'pages_to_fetch': 1}
                 json.dump(config, out_file)
         self.update_daily_price(pages_to_fetch)
 
-        tmnow =datetime.now()
+        tmnow = datetime.now()
         lastday = calendar.monthrange(tmnow.year, tmnow.month)[1]
         if tmnow.month == 12 and tmnow.day == lastday:
             tmnext = tmnow.replace(year= tmnow.year + 1, month = 1, day = 1, hour = 17, minute = 0, second = 0)
