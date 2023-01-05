@@ -17,7 +17,7 @@ File: DataLoad.py, StockData.xlsx
 <br>
 <h5>3단계: 데이터베이스 구축</h5>
 File: DB_connect
-<br> 웹 크롤링시,속도 문제, 데이터베이스로 보완.
+<br> 웹 크롤링시, 속도 문제, 데이터베이스로 보완.
 <br>
 <br>
 <h5>1단계:</h5>
