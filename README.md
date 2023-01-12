@@ -37,3 +37,4 @@ File: DB_connect
  -2023/1/4: 데이터베이스 구축 시작.
 <br>-1/5: DB로부터 받아온 일일 시세 데이터 조회(MarketDB.py)
 <br>-1/6: Analyzer.py파일 추가
+<br>-1/12: Django활용 웹 서버 구축 시작.(StockServer 파일)
