@@ -42,5 +42,8 @@ File: StockServer
  -2023/1/4: 데이터베이스 구축 시작.
 <br>-1/5: DB로부터 받아온 일일 시세 데이터 조회(MarketDB.py)
 <br>-1/6: Analyzer.py파일 추가
-<br>-1/12: Django활용 웹 서버 구축 시작.(StockServer 파일)
-<br>-1/13: Hello폴더 추가. 웹으로 본인 계좌 잔고 확인 진행 중 (hello 파일)
+<br>
+<br>
+<h5>4단계</h5>
+-1/12: Django활용 웹 서버 구축 시작. (StockServer 파일)
+<br>-1/13: Hello폴더 추가. 본인 계좌 잔고 확인 위한 웹 페이지 구축, 진행 중 (hello 파일)
