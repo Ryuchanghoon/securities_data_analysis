@@ -48,3 +48,4 @@ File: StockServer
 -1/12: Django활용 웹 서버 구축 시작. (StockServer 파일)
 <br>-1/13: Hello폴더 추가. 본인 계좌 잔고 확인 위한 웹 페이지 구축, 진행 중 (hello 파일)
 <br>-1/14: 디렉터리 위치 변경. url 연결 오류. 해결 예정
+<br>-1/15: url연결 오류문제 해결. 웹으로 종목 현재가 불러오기 완료.(mySite/StockServer파일)
