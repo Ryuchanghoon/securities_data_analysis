@@ -12,7 +12,7 @@ KIS developers 서비스, APP_KEY, APP_SECRET(config.yaml) 값 설정하여, 본
 <br>
 <h5>2단계: 주식 데이터 실시간 차트 </h5>
 File: DataLoad.py, StockData.xlsx
-<br>원하는 주식 종목 현재가, 실시간으로 불러와서 그래프 띄우기
+<br>원하는 주식 종목 현재가, 실시간으로 불러와서 그래프 띄우기.
 <br>
 <br>
 <h5>3단계: 데이터베이스 구축</h5>
