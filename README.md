@@ -22,7 +22,7 @@ File: DB_connect
 <br>
 <h5>4단계: 웹으로 본인 계좌 잔고 확인</h5>
 File: StockServer
-<br> Django 활용 본인 계좌 잔고 확인 위한 웹 페이지 구축.
+<br> Django 활용 본인 계좌 잔고 확인 위한 웹 페이지 구축
 <br>
 <br>
 <h5>1단계:</h5>
